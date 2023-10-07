@@ -34,3 +34,10 @@ flask db upgrade
 ```
 
 Run `python main.py` and enjoy!
+
+#### Refferences
+1. [flask](https://flask.palletsprojects.com/en/3.0.x/)
+2. [The Flask Mega Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
+
+#### Youtube video
+[aim & sya](https://youtu.be/tBS9iWOEx10?si=HJuUK9mRgz8t5hzZ)

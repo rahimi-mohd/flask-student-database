@@ -1,0 +1,45 @@
+<!-- base -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('.static', filename='style.css') }}">
+    {% if title %}
+    <title>My Simple Website - {{ title }}</title>
+    {% else %}
+    <title>My Simple Website</title>
+    {% endif %}
+</head>
+<body>
+    <header>
+        {% block header %}{% endblock %}
+    </header>
+
+    <nav>
+        <p>
+            <a href="/index">Home</a>
+        <a href="{{ url_for('add_data') }}">Add Data</a>
+        </p>
+    </nav>
+
+    <!-- flash message if available -->
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul>
+        {% for msg in messages %}
+        <li>{{ msg }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+    
+    <main>
+        {% block main %}{% endblock %}
+    </main>
+    
+    <footer>
+        <p>create by: rahimi-mohd<sup>tm</sup></p>
+    </footer>
+</body>
+</html>

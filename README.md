@@ -41,3 +41,5 @@ Run `python main.py` and enjoy!
 
 #### Youtube video
 [aim & sya](https://youtu.be/tBS9iWOEx10?si=HJuUK9mRgz8t5hzZ)
+
+TODO: Lets upgrade this project later into Django project.
